@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		623954CE2F6AD8FF00C4F36F /* SizzleScriptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623954CB2F6AD8FF00C4F36F /* SizzleScriptApp.swift */; };
+		623954CF2F6AD8FF00C4F36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623954C82F6AD8FF00C4F36F /* Assets.xcassets */; };
+		623954D82F6AD93F00C4F36F /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623954D72F6AD93F00C4F36F /* LoginUIView.swift */; };
+		623954E22F6B5BF700C4F36F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623954E12F6B5BF700C4F36F /* LoginViewModel.swift */; };
+		623954E72F6B607400C4F36F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623954E42F6B5D5600C4F36F /* LoginUseCase.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		62A9DBA42F69D6DB00A413DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +32,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		623954C82F6AD8FF00C4F36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623954CB2F6AD8FF00C4F36F /* SizzleScriptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizzleScriptApp.swift; sourceTree = "<group>"; };
+		623954D72F6AD93F00C4F36F /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
+		623954E12F6B5BF700C4F36F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		623954E42F6B5D5600C4F36F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		62A9DB942F69D6DB00A413DC /* SizzleScript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SizzleScript.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9DBA32F69D6DB00A413DC /* SizzleScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9DBAD2F69D6DB00A413DC /* SizzleScriptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleScriptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		62A9DB962F69D6DB00A413DC /* SizzleScript */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SizzleScript;
-			sourceTree = "<group>";
-		};
 		62A9DBA62F69D6DB00A413DC /* SizzleScriptTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SizzleScriptTests;
@@ -72,10 +80,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623954D92F6B5AD000C4F36F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				623954CB2F6AD8FF00C4F36F /* SizzleScriptApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		623954DB2F6B5AE800C4F36F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				623954DE2F6B5B3C00C4F36F /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		623954DC2F6B5AF100C4F36F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				623954E62F6B5D7900C4F36F /* Repositories */,
+				623954E52F6B5D7200C4F36F /* Modals */,
+				623954E32F6B5D4D00C4F36F /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		623954DD2F6B5AFC00C4F36F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		623954DE2F6B5B3C00C4F36F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				623954E12F6B5BF700C4F36F /* LoginViewModel.swift */,
+				623954D72F6AD93F00C4F36F /* LoginUIView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		623954DF2F6B5B7100C4F36F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		623954E02F6B5B7700C4F36F /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				623954C82F6AD8FF00C4F36F /* Assets.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		623954E32F6B5D4D00C4F36F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				623954E42F6B5D5600C4F36F /* LoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		623954E52F6B5D7200C4F36F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		623954E62F6B5D7900C4F36F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		62A9DB8B2F69D6DB00A413DC = {
 			isa = PBXGroup;
 			children = (
-				62A9DB962F69D6DB00A413DC /* SizzleScript */,
+				623954E02F6B5B7700C4F36F /* Resouces */,
+				623954DF2F6B5B7100C4F36F /* Core */,
+				623954DD2F6B5AFC00C4F36F /* Data */,
+				623954DC2F6B5AF100C4F36F /* Domain */,
+				623954DB2F6B5AE800C4F36F /* Presentation */,
+				623954D92F6B5AD000C4F36F /* App */,
 				62A9DBA62F69D6DB00A413DC /* SizzleScriptTests */,
 				62A9DBB02F69D6DB00A413DC /* SizzleScriptUITests */,
 				62A9DB952F69D6DB00A413DC /* Products */,
@@ -106,9 +198,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				62A9DB962F69D6DB00A413DC /* SizzleScript */,
 			);
 			name = SizzleScript;
 			packageProductDependencies = (
@@ -212,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623954CF2F6AD8FF00C4F36F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623954D82F6AD93F00C4F36F /* LoginUIView.swift in Sources */,
+				623954E22F6B5BF700C4F36F /* LoginViewModel.swift in Sources */,
+				623954CE2F6AD8FF00C4F36F /* SizzleScriptApp.swift in Sources */,
+				623954E72F6B607400C4F36F /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
