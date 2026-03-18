@@ -25,7 +25,8 @@ struct SizzleScriptApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            LoginUIView()
         }
         .modelContainer(sharedModelContainer)
     }
